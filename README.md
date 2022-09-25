@@ -1,2 +1,1 @@
-# Name of the repo
-(Insert summary)
+A game where you answer riddles.
