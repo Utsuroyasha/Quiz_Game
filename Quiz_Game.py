@@ -97,16 +97,19 @@ if arr == arr_answer:
 else: 
     print("Wrong! ❌")
 
-# fix the amount of possiblities in which you can answer this question
 answer11 = input("A cowboy rode into town on Friday. He stayed in town for three days and rode out on Friday. How is that possible? ").lower()
 arr = sorted(answer11.split())
-arr_answer = sorted(['his', "horse's", 'name', 'is', 'friday'])
-if arr == arr_answer:
+arr_answer = (["horse", "horse's", "friday"])
+y = 0
+for x in arr:
+    if x in arr_answer:
+        y += 1
+if y >= 2:
     print("Correct! ✅")
     score += 1
 else: 
     print("Wrong! ❌")
 
-print('You got ' + str((score / 4) * 100) + "% of the questions correct!")
+print('You got ' + str((score / 11) * 100) + "% of the questions correct!")
 # Figure out how to end game and a message about the amount correct out of 11
 
