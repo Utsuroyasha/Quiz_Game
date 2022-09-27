@@ -5,13 +5,14 @@ playing = input("Do you want to play? ").lower()
 if playing != "yes":
     quit()
 print("Okay, Let's Play!")
+score = 0
 
 answer1 = input("What are two things you can never eat for breakfast? ").lower()
 arr = sorted(answer1.split())
 arr_answer = sorted(['lunch', 'and', 'dinner'])
 if arr == arr_answer:
     print("Correct! ✅")
-
+    score += 1
 else: 
     print("Wrong! ❌")
 
@@ -20,7 +21,7 @@ arr = sorted(answer2.split())
 arr_answer = sorted(['a', 'match'])
 if arr == arr_answer:
     print("Correct! ✅")
-
+    score += 1
 else: 
     print("Wrong! ❌")
 
@@ -29,7 +30,7 @@ arr = sorted(answer3.split())
 arr_answer = sorted(['silence'])
 if arr == arr_answer:
     print("Correct! ✅")
-
+    score += 1
 else: 
     print("Wrong! ❌")
 
@@ -38,7 +39,7 @@ arr = sorted(answer4.split())
 arr_answer = sorted(['a', 'comb'])
 if arr == arr_answer:
     print("Correct! ✅")
-
+    score += 1
 else: 
     print("Wrong! ❌")
 
@@ -47,7 +48,7 @@ arr = sorted(answer5.split())
 arr_answer = sorted(['a', 'river'])
 if arr == arr_answer:
     print("Correct! ✅")
-
+    score += 1
 else: 
     print("Wrong! ❌")
 
@@ -56,7 +57,7 @@ arr = sorted(answer6.split())
 arr_answer = sorted(['a', 'crane'])
 if arr == arr_answer:
     print("Correct! ✅")
-
+    score += 1
 else: 
     print("Wrong! ❌")
 
@@ -65,7 +66,7 @@ arr = sorted(answer7.split())
 arr_answer = sorted(['a', 'stamp'])
 if arr == arr_answer:
     print("Correct! ✅")
-
+    score += 1
 else: 
     print("Wrong! ❌")
 
@@ -74,7 +75,7 @@ arr = sorted(answer8.split())
 arr_answer = sorted(['a', 'needle'])
 if arr == arr_answer:
     print("Correct! ✅")
-
+    score += 1
 else: 
     print("Wrong! ❌")
 
@@ -83,7 +84,7 @@ arr = sorted(answer9.split())
 arr_answer = sorted(['mount', 'everest'])
 if arr == arr_answer:
     print("Correct! ✅")
-
+    score += 1
 else: 
     print("Wrong! ❌")
 
@@ -92,18 +93,20 @@ arr = sorted(answer10.split())
 arr_answer = sorted(['the', 'letter', 'm'])
 if arr == arr_answer:
     print("Correct! ✅")
-
+    score += 1
 else: 
     print("Wrong! ❌")
 
+# fix the amount of possiblities in which you can answer this question
 answer11 = input("A cowboy rode into town on Friday. He stayed in town for three days and rode out on Friday. How is that possible? ").lower()
 arr = sorted(answer11.split())
 arr_answer = sorted(['his', "horse's", 'name', 'is', 'friday'])
 if arr == arr_answer:
     print("Correct! ✅")
-
+    score += 1
 else: 
     print("Wrong! ❌")
 
+print('You got ' + str((score / 4) * 100) + "% of the questions correct!")
 # Figure out how to end game and a message about the amount correct out of 11
 
